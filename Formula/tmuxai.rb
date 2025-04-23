@@ -10,7 +10,7 @@ class Tmuxai < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "08a699696f63b11819da8798cd3a0ed1bcc2dba6e19debbf59739cf5075e7b76"
+      sha256 "4f09b067447b4bc353979bc51be552f4e15c011404670a23a0b3a9cbb506a2a8"
 
       def install
         bin.install "tmuxai"
@@ -18,7 +18,7 @@ class Tmuxai < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "71e1a30bd6ebdaf2584201a4905ee7f156ff68f37bfbf2e38128fbd478a35966"
+      sha256 "f8f51b69fd1450e474f033e689c0744dcdef94f1fb761d45ee3111eb4a5bbd89"
 
       def install
         bin.install "tmuxai"
@@ -30,7 +30,7 @@ class Tmuxai < Formula
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Linux_amd64.tar.gz"
-        sha256 "ab4ba53e708fa0c034ce7eced2299a3f6c46ee157aa09a1daefea24cc516391f"
+        sha256 "36d69a39a5b08ed9708cf93c072238d55892ebc35257b385bf5473f42e6c5690"
 
         def install
           bin.install "tmuxai"
@@ -40,7 +40,7 @@ class Tmuxai < Formula
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
         url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Linux_arm64.tar.gz"
-        sha256 "655995c57afe69990c86f0ea9226de62f7d5d663aae0d009bed397d29334a444"
+        sha256 "dd8b20eefe1a868a8c6aaaded53c13c5983271113d8ce8e34cf8325868c7beb9"
 
         def install
           bin.install "tmuxai"
