@@ -5,20 +5,20 @@
 class Tmuxai < Formula
   desc "AI-Powered, Non-Intrusive Terminal Assistant"
   homepage "https://tmuxai.dev/"
-  version "1.0.0"
+  version "1.0.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "e82849df9090d2400357b4ba149215000798befa64b78b68b98f9a2835653273"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.1/tmuxai_Darwin_amd64.tar.gz"
+      sha256 "3c41647ef3d80b1fb862aca4dc1721a851fd91df9deff63b52f0438998c01b7b"
 
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "3053a2af2c71f6ad12dafe759d86fd080fec633bfec5d58f8f944aa06697bcfa"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.1/tmuxai_Darwin_arm64.tar.gz"
+      sha256 "3dbeaaed8f68ff18faf9e6529ab5795553d721c7833a90263f94685d1bc1835e"
 
       def install
         bin.install "tmuxai"
@@ -29,8 +29,8 @@ class Tmuxai < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Linux_amd64.tar.gz"
-        sha256 "2e0b0ce60526ffb3a99649ecd07a8d377841715dfcfce0925a5006a8f0d56c6b"
+        url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.1/tmuxai_Linux_amd64.tar.gz"
+        sha256 "13ccfeaffe794d05d1f731da6858e55ff3fa78e0156b9bcfbbd8f51792229b01"
 
         def install
           bin.install "tmuxai"
@@ -39,8 +39,8 @@ class Tmuxai < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.0/tmuxai_Linux_arm64.tar.gz"
-        sha256 "284f3f83fcbbcf92d6105554f8905ff67a048e79bfc5f9d99e646468520a1576"
+        url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.1/tmuxai_Linux_arm64.tar.gz"
+        sha256 "baebde101c55ffdd82c60be33fcaee61e7cf4f7cd30bfa34af2f409ae4faa912"
 
         def install
           bin.install "tmuxai"
