@@ -5,22 +5,22 @@
 class Tmuxai < Formula
   desc "AI-Powered, Non-Intrusive Terminal Assistant"
   homepage "https://tmuxai.dev/"
-  version "1.0.3"
+  version "1.0.4"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.3/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "41e880247972f86874aef4e60a77db93e2c2b47d857f1088b856af8e98f20d9d"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.4/tmuxai_Darwin_amd64.tar.gz"
+      sha256 "fc0c4b4d6002ba30d2fd5ac998d6cce74aace092f723a51f9b0e3923d79b2751"
 
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.3/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "ff40f1c4605933507c8f65e3a694756740cc5b65b264457f9f454f1d9f00f8d9"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.4/tmuxai_Darwin_arm64.tar.gz"
+      sha256 "44cb1b95026b11df3e30a1da9166d4d483038e48d96b9261a1b04e4cfb598481"
 
       def install
         bin.install "tmuxai"
@@ -30,15 +30,15 @@ class Tmuxai < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.3/tmuxai_Linux_amd64.tar.gz"
-      sha256 "916b390a283d415f9d303fd705cc162402ed071d616dbe7620ea683b49c28a4e"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.4/tmuxai_Linux_amd64.tar.gz"
+      sha256 "bb81ab81e21b44e6fdc91219d9fccdc0f314260be7f006d971848028d576a65d"
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.3/tmuxai_Linux_arm64.tar.gz"
-      sha256 "58770cf1f98badf0635e7f9ad05fbe31dde52557d20294a3a4fa01abcd1554eb"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.0.4/tmuxai_Linux_arm64.tar.gz"
+      sha256 "285dde2569fabf9744310b37d037eef0dc9d1f6f89431d710e6cf9543c520ede"
       def install
         bin.install "tmuxai"
       end
