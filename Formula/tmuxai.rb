@@ -5,22 +5,22 @@
 class Tmuxai < Formula
   desc "AI-Powered, Non-Intrusive Terminal Assistant"
   homepage "https://tmuxai.dev/"
-  version "1.1.1"
+  version "1.1.2"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.1/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "ad3a544c96a87427baaad4dea3abbcccdbf94c70a55ba811250dae1512e999d6"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.2/tmuxai_Darwin_amd64.tar.gz"
+      sha256 "6252ba467b98f9efa66e7f90a154f1f7ac4654d5655acfac3c7977fe1bec5851"
 
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.1/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "b1e04cfa93d25f536c385e4c25f995cfa636980aa7e0c6e9a0d7c803998ec59b"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.2/tmuxai_Darwin_arm64.tar.gz"
+      sha256 "7b7116da57dc7afa2b7d65cc4c09dac307a9839ec5f73b01ff622f2a573597fd"
 
       def install
         bin.install "tmuxai"
@@ -29,16 +29,16 @@ class Tmuxai < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.1/tmuxai_Linux_amd64.tar.gz"
-      sha256 "e9c2de025b0cf00a085eee41e8b2b86925234101e11974ff0e597d2e103ad110"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.2/tmuxai_Linux_amd64.tar.gz"
+      sha256 "ba5604ccb50494f442692fca4c9b29e71b730b9dd1f83c43f1596d6f220aa86c"
       def install
         bin.install "tmuxai"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.1/tmuxai_Linux_arm64.tar.gz"
-      sha256 "983254c79a91e288920b6bec0c5e7370f91c5d6d71418b50d7d9ba2e087f8496"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v1.1.2/tmuxai_Linux_arm64.tar.gz"
+      sha256 "a005af476f6eadbd5d91c08d0255fc53c125d8773b53c3750995327a4ca5af19"
       def install
         bin.install "tmuxai"
       end
