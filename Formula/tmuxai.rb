@@ -5,22 +5,22 @@
 class Tmuxai < Formula
   desc "AI-Powered, Non-Intrusive Terminal Assistant"
   homepage "https://tmuxai.dev/"
-  version "2.0.2"
+  version "2.1.0"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.0.2/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "6f4ee7d226694c028a93fdba13935761f3c907c4873ba5c78d883675565c2aa1"
+      url "https://github.com/BoringDystopiaDevelopment/tmuxai/releases/download/v2.1.0/tmuxai_Darwin_amd64.tar.gz"
+      sha256 "59846e4b5ef689bfad2ced8cdbe892ebe3baa7090910be7ef935b704e3bee742"
 
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.0.2/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "a7ed897dfef7dc8b8f774e8ad03ec84ed6dafd5fbbc255e5e08485cc1c7ece3c"
+      url "https://github.com/BoringDystopiaDevelopment/tmuxai/releases/download/v2.1.0/tmuxai_Darwin_arm64.tar.gz"
+      sha256 "8c358c88736d3d5ef5547ec813addfc4f83a6191246f7b98129e22aa477495ca"
 
       def install
         bin.install "tmuxai"
@@ -30,15 +30,15 @@ class Tmuxai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.0.2/tmuxai_Linux_amd64.tar.gz"
-      sha256 "35b40425f03f67697654ecb59d8ce72e12806879808764406f009e5e0f6abbfc"
+      url "https://github.com/BoringDystopiaDevelopment/tmuxai/releases/download/v2.1.0/tmuxai_Linux_amd64.tar.gz"
+      sha256 "1eb0197500221e9e4411e875dd6a8ab43a20ae3fe641b2f33fee0c0ff6cf4854"
       def install
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.0.2/tmuxai_Linux_arm64.tar.gz"
-      sha256 "98e76aebffe06b5dfe50e3633235d90babddd71a9e7dd5f269ccf4c13792fc76"
+      url "https://github.com/BoringDystopiaDevelopment/tmuxai/releases/download/v2.1.0/tmuxai_Linux_arm64.tar.gz"
+      sha256 "a292dbc4cda9173f3eb8712a8e4049a58dc67b92121092ab56a70b33e0b6049b"
       def install
         bin.install "tmuxai"
       end
