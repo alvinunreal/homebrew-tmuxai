@@ -5,22 +5,22 @@
 class Tmuxai < Formula
   desc "AI-Powered, Non-Intrusive Terminal Assistant"
   homepage "https://tmuxai.dev/"
-  version "2.3.2"
+  version "2.4.0"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.3.2/tmuxai_Darwin_amd64.tar.gz"
-      sha256 "63c9154a5c48b4539bc0c90682c6cd7c415bb2990040f6d64101d92a50239dfc"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.4.0/tmuxai_Darwin_amd64.tar.gz"
+      sha256 "abba1b5ae3c3397ce9063ee42423d74c59106b6379b16d528b977192c4176466"
 
       define_method(:install) do
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.3.2/tmuxai_Darwin_arm64.tar.gz"
-      sha256 "410725df537491785708e5de74a10392dab55344b86a3dc991a015c640ea33a4"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.4.0/tmuxai_Darwin_arm64.tar.gz"
+      sha256 "21ef0204715307caa56344e59c86cd4a3e9ae6b4a59e9f488c8456ab895c94b9"
 
       define_method(:install) do
         bin.install "tmuxai"
@@ -30,15 +30,15 @@ class Tmuxai < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.3.2/tmuxai_Linux_amd64.tar.gz"
-      sha256 "f557bcccf1683653d97c71b20567596082c3547cbe70e837802cc1ef9899f754"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.4.0/tmuxai_Linux_amd64.tar.gz"
+      sha256 "2bace935dfd5b3d5587fa51d6180deaa47d4546ba31a579282004889dcbd3635"
       define_method(:install) do
         bin.install "tmuxai"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.3.2/tmuxai_Linux_arm64.tar.gz"
-      sha256 "92d55dcb36eb49bfe0f4d3ac911c834e90b341cb1afaae2a35b03e15a4b8aaef"
+      url "https://github.com/alvinunreal/tmuxai/releases/download/v2.4.0/tmuxai_Linux_arm64.tar.gz"
+      sha256 "6b7b0bc729fa408f9cf60066c7873f17825a7e2c1e7fdd86c2ffc84997afc274"
       define_method(:install) do
         bin.install "tmuxai"
       end
